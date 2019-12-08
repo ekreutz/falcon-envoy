@@ -41,10 +41,10 @@ docker run -it -p 127.0.0.1:8888:8080 --name falcon falcon_app:latest
 Running 30s test @ http://127.0.0.1:8888
   6 threads and 400 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     4.91ms    2.17ms 172.02ms   99.63%
-    Req/Sec     8.37k     1.34k   11.82k    65.06%
-  1504576 requests in 30.10s, 203.75MB read
-  Socket errors: connect 149, read 174, write 0, timeout 0
-Requests/sec:  49982.86
-Transfer/sec:  6.77MB
+    Latency    22.99ms    8.13ms  59.73ms   60.35%
+    Req/Sec     1.74k   272.83     3.55k    66.83%
+  312498 requests in 30.07s, 50.37MB read
+  Socket errors: connect 149, read 11375, write 0, timeout 0
+Requests/sec:  10392.07
+Transfer/sec:  1.67MB
 ```

@@ -1,17 +1,11 @@
-import falcon
+import fastapi
 
-from resources.things import ThingsResource
+from routers import things
 
 def create_app():
-    """Adds all app resources and makes Falcon WSGI app, and returns it.
+    app = fastapi.FastAPI()
 
-    Returns:
-        (falcon.API): the Falcon app instance
-    """
-    # falcon.API instances are callable WSGI apps
-    app = falcon.API()
-
-    # Add all routes
-    app.add_route("/{field}", ThingsResource())
+    # Declare routers
+    app.include_router(things.router)
 
     return app
