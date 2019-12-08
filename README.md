@@ -2,6 +2,8 @@
 
 Testing the stack: Falcon -> Bjoern -> Envoy
 
+Note: for new production systems, look into [ASGI](https://asgi.readthedocs.io/en/latest/implementations.html) implementations.
+
 ## Stack setup
 
 1. Python application that implements Python's WSGI interface: `Falcon` framework
